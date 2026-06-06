@@ -31,7 +31,7 @@ body, ul, li, h1, h2, a{
   }
   .banner .welcome{
     background:#FEB614;
-    color: white;
+    color: #000000;
     padding: 30px;
     font-size: 60px;
     position: absolute;
@@ -176,7 +176,7 @@ body, ul, li, h1, h2, a{
       outline: none
   }
   footer{
-    background: #F63232;
+    background: #CC0000;
     color: white;
     padding: 10px;
     text-align: center;
@@ -209,7 +209,10 @@ body, ul, li, h1, h2, a{
     nav li{
       font-size: 18px;
     }
-  
+    nav li a.join {
+      color: #CC0000;
+    }
+
   }
   
   @media screen and (max-width: 700px){

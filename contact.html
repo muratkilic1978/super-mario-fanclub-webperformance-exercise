@@ -21,7 +21,7 @@
             <h2>Get in Touch<br><span>with Marioclub</span></h2>
         </div>
     </section>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Join the club</a></li>
             <li><a href="news.html">Latest news</a></li>
@@ -31,11 +31,15 @@
     </nav>
     <main>
         <article>
-            <h2>Get in touch with me, Mario</h2>
+            <h3>Get in touch with me, Mario</h3>
             <form>
-                <input type="text" name="fname" placeholder="Type Firstname" required>
-                <input type="text" name="lname" placeholder="Type Lastname" required><br />
-                <input type="email" name="mail" placeholder="Type Email" required>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" placeholder="Type Firstname" required>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" placeholder="Type Lastname" required><br />
+                <label for="mail">Email address</label>
+                <input type="email" id="mail" name="mail" placeholder="Type Email" required>
+                <label for="country">Country</label>
                 <input list="countries" name="country" id="country">
                 <datalist id="countries">
                     <option value="Albania">
@@ -73,20 +77,23 @@
                     <option value="United Kingdom">
                 </datalist>
                 <br />
-                <textarea name="question" rows="4" cols="40" placeholder="Ask a question...">Ask a question</textarea>
+                <label for="question">Your question</label>
+                <textarea id="question" name="question" rows="4" cols="40" placeholder="Ask a question..."></textarea>
                 <input type="submit" value="Get in Touch">
             </form>
         </article>
         <ul class="images">
-            <li><img src="img/thumb-1.jpg" alt="mario thumbnail 1"></li>
-            <li><img src="img/thumb-2.jpg" alt="mario thumbnail 2"></li>
+            <li><img src="img/thumb-1.jpg" alt="Mario rides on Yoshi’s back as they jump toward floating coins"></li>
+            <li><img src="img/thumb-2.jpg" alt="Mario swims through an underwater level filled with coins, colorful coral, pipes, fish enemies, and large spiked sea creatures"></li>
         </ul>
     </main>
-    <section class="join">
-        <h2>Contact Us today!</h2>
+    <section class="join" aria-labelledby="join-heading">
+        <h2 id="join-heading">Contact Us today!</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dignissimos minus voluptatem.</p>
         <form>
-            <input type="email" name="email" placeholder="Type email & hit enter" required>
+            <label for="email-signup">Email address</label>
+            <input type="email" id="email-signup" name="email" placeholder="your@email.com" required>
+            <button class="join-mario-club-btn" type="submit">Join the club</button>
         </form>
 
     </section>

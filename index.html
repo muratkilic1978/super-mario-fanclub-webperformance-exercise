@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Marioclub</title>
+    <title>Marioclub — Home</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <h2>Welcome to <br><span>Marioclub</span></h2>
         </div>
     </section>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <ul>
             <li><a href="index.html" class="join">Join the club</a></li>
             <li><a href="news.html">Latest news</a></li>
@@ -31,19 +31,21 @@
     </nav>
     <main>
         <article>
-            <h2>It's a me, Mario</h2>
+            <h3>It's a me, Mario</h3>
             <p>Throughout the year! Join today and receive a FREE Mario's Chiller! Once you have signed up, you will receive your Mini Marios VIP card in the mail including 5 FREE Kids Meals and 5 FREE Mario's Chillers 4-6 weeks after registration. Now that's Amo.</p>
         </article>
         <ul class="images">
-            <li><img src="img/thumb-1.jpg" alt="mario thumbnail 1"></li>
-            <li><img src="img/thumb-2.jpg" alt="mario thumbnail 2"></li>
+            <li><img src="img/thumb-1.jpg" alt="Mario rides on Yoshi’s back as they jump toward floating coins"></li>
+            <li><img src="img/thumb-2.jpg" alt="Mario swims through an underwater level filled with coins, colorful coral, pipes, fish enemies, and large spiked sea creatures"></li>
         </ul>
     </main>
-    <section class="join">
-        <h2>Join Today!</h2>
+    <section class="join" aria-labelledby="join-heading">
+        <h2 id="join-heading">Join Today!</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dignissimos minus voluptatem.</p>
         <form>
-            <input type="email" name="email" placeholder="Type email & hit enter" required>
+            <label for="email-signup">Email address</label>
+            <input type="email" id="email-signup" name="email" placeholder="your@email.com" required>
+            <button class="join-mario-club-btn" type="submit">Join the club</button>
         </form>
     </section>
     <footer>
